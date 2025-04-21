@@ -3,7 +3,7 @@
 
 A modern, responsive web application for creating and managing digital notes, built with React.
 
-![Sticky Notes App](ScreenShots/HomePage.png)
+![Sticky Notes App](Screenshots/HomePage.png)
 
 ## 📋Project Description
 
