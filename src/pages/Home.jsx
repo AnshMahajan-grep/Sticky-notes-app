@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import NoteCard from '../components/NoteCard';
+import { Link } from 'react-router-dom';
 
 function Home() {
   const [notes, setNotes] = useState([]);
@@ -62,7 +63,7 @@ function Home() {
             onClick={() => setSearchText('')}
             style={styles.clearButton}
           >
-            ×
+            x
           </button>
         )}
       </div>
@@ -74,12 +75,13 @@ function Home() {
       ) : notes.length === 0 ? (
         <div style={styles.emptyContainer}>
           <p style={styles.empty}>No notes yet. Go add one!</p>
+          <Link to ="/add">
           <button 
-            onClick={() => window.location.href = '/add'} 
             style={styles.addButton}
           >
             Create Your First Note
           </button>
+          </Link>
         </div>
       ) : filteredNotes.length === 0 ? (
         <p style={styles.empty}>No notes match your search.</p>

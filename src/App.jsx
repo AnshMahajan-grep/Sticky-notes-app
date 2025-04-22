@@ -6,6 +6,7 @@ import AddNote from './pages/AddNote';
 import About from './pages/About';
 import Stats from './pages/Stats';
 import PinnedNotes from './pages/PinnedNotes';
+import "./App.css";
 
 function App() {
   return (
